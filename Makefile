@@ -9,7 +9,7 @@ $(TOOLS):
 	$(CC) $(CFLAGS) $@.cpp -o $@
 
 test:
-	@echo "ngsUtils: test scripts not implemented yet."
+	@cd examples/; sh ./test.sh 2> /dev/null; cd ../
 
 clean:
-	@rm -rf *o GetSubSfs GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno GetSwitchedSfs
+	@rm -rf *o GetSubSfs GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno GetSwitchedSfs examples/testA.*
