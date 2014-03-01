@@ -67,9 +67,9 @@ All programs use a subset of these options; please check above examples.
     -posfile: text file with list of sites/lines (1-based)
     -len: length (number of lines) of posfile
     -isfold: whether the SFS is folded or not
-    -ncat:
+    -ncat: number of genotype categories [10], leave the default value
     -nind_new: number of individuals to extract (starting from the beginning)
     -nsites_new: number of sites to extract (starting from the beginning)
-    -check:
+    -check: additional verbose check of sanity of file dimensions (for debugging)
     -outfile: prefix for output files
     -verbose: extra information is printed on screen
