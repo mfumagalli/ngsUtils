@@ -1,4 +1,3 @@
-
 #include <cstdio>
 #include <cstdlib>
 #include <sys/stat.h>
@@ -193,7 +192,7 @@ int main (int argc, char *argv[]) {
   new_sfs.x=pos.x;
   new_sfs.y=sfs.y;
   new_sfs.data = cdata;
-  fprintf(stderr, "Dim output %d , %d", new_sfs.x, new_sfs.y);
+  if (verbose) fprintf(stderr, "Dim output %d , %d", new_sfs.x, new_sfs.y);
   for (int i=0; i<new_sfs.x; i++) {
     for (int j=0; j<new_sfs.y; j++) {
       new_sfs.data[i][j]=0.0;
