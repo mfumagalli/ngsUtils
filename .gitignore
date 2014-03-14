@@ -1,2 +1,8 @@
-bin/
 *o
+GetSubSfs
+GetSubSim
+GetSubGeno
+GetSwitchedGeno
+GetMergedGeno
+GetSwitchedSfs
+examples/testA.*

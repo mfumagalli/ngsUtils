@@ -6,10 +6,10 @@ CFLAGS = -O3 -Wall
 all: $(TOOLS)
 
 $(TOOLS):
-	$(CC) $(CFLAGS) $@.cpp -o bin/$@
+	$(CC) $(CFLAGS) $@.cpp -o $@
 
 test:
 	@cd examples/; sh ./test.sh 2> /dev/null; cd ../
 
 clean:
-	@rm -rf *o bin/GetSubSfs bin/GetSubSim bin/GetSubGeno bin/GetSwitchedGeno bin/GetMergedGeno bin/GetSwitchedSfs examples/testA.*
+	@rm -rf *o GetSubSfs GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno GetSwitchedSfs examples/testA.*
