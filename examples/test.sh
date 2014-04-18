@@ -32,6 +32,3 @@ then
 else
     echo "ngsUtils: test(s) failed!"
 fi
-
-
-
