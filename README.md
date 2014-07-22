@@ -1,6 +1,4 @@
 
-IMPORTANT NOTE: These examples may not work with more recent versions of ANGSD. We will update everything when a stable final version of ANGSD will be available. In doubt, please contact the authors for questions on the usage of ngsTools with the current version of ANGSD.
-
 # ngsUtils
 
 Several general programs are also available to manipulate intermediate files.
@@ -76,3 +74,7 @@ All programs use a subset of these options; please check above examples.
     -check: additional verbose check of sanity of file dimensions (for debugging)
     -outfile: prefix for output files
     -verbose: extra information is printed on screen
+
+Further examples can be found [here](https://github.com/mfumagalli/ngsUtils/tree/master/examples).
+
+
