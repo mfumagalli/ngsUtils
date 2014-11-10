@@ -2,6 +2,7 @@
 # ngsUtils
 
 Several general programs are also available to manipulate intermediate files.
+In most cases, you won't need to use them.
 
 ### Installation
 
@@ -13,7 +14,6 @@ To install these tools just run:
 
     % cd ngsUtils
     % make
-    % make test
 
 Executables are built into the main directory. If you wish to clean all binaries and intermediate files:
 
