@@ -173,6 +173,10 @@ int main (int argc, char *argv[]) {
   FILE *fp = fopen(outfile,"wb");
 
   for (int s=0; s<pos.x; s++) {
+    if(pos.data[s] < 1 || pos.data[s] > nsites){
+      fprintf(stderr, "\n\tERROR: invalid specified positions!\n");
+      exit(-1);
+    }
     int row = pos.data[s]-1;
     for (int i=row*nind; i<(row+1)*nind; i++)
       fwrite(geno.data[i], sizeof(double), geno.y, fp);
