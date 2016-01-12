@@ -2,7 +2,7 @@
 # ngsUtils
 
 Several general programs are also available to manipulate intermediate files.
-In most cases, you won't need to use them.
+In most cases, you won't need to use them. Moreover, they haven't been extensively tested.
 
 ### Installation
 
@@ -18,6 +18,8 @@ To install these tools just run:
 Executables are built into the main directory. If you wish to clean all binaries and intermediate files:
 
     % make clean
+
+However, we recommend to install to whole ngsTools package instead.
 
 ### Usage
 
