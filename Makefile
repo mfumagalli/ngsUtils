@@ -1,5 +1,5 @@
 
-TOOLS = GetSubSfs GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno GetSwitchedSfs
+TOOLS = GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno
 CC = g++
 CFLAGS = -O3 -Wall
 
@@ -12,4 +12,4 @@ test:
 	@cd examples/; bash test.sh 2> test.log; cd ../
 
 clean:
-	@rm -rf *o GetSubSfs GetSubSim GetSubGeno GetSwitchedGeno GetMergedGeno GetSwitchedSfs examples/testA.*
+	@rm -rf *o $(TOOLS) examples/testA.*

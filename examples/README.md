@@ -21,12 +21,6 @@ From an index file with sites to keep:
 
 ---
 
-### Select a subset of sites of sample allele frequency posterior probabilities files
-
-    % ../GetSubSfs -infile testA.rf.saf -posfile pos_file.txt -nind 24 -nsites 10000 -len 5000 -outfile testA.rf.sub.saf -isfold 0 -verbose 0
-
----
-
 []: # "### Select a subset of of individuals and sites from simulated data files"
 
 []: # "    % ../GetSubSim -infile testA.glf.gz -nind 24 -nsites 10000 -outfile testA.sim.glf.gz -nind_new 10 -nsites_new 500 -check 0"
@@ -36,9 +30,3 @@ From an index file with sites to keep:
 ### Switch major/minor or ancestral/derived in genotype posterior probabilities files
 
     % ../GetSwitchedGeno -infile testA.geno -posfile pos_file.txt -nind 24 -nsites 10000 -len 5000 -outfile testA.switched.geno -verbose 0
-
-[]: # "---"
-
-[]: # "### Switch major/minor or ancestral/derived in sample allele frequency posterior probabilities files"
-
-[]: # "    % ../GetSwitchedSfs -infile testA.rf.saf -posfile pos_file.txt -nind 24 -nsites 10000 -len 5000 -outfile testA.rf.switched.saf -isfold 0 -verbose 0"
