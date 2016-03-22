@@ -126,11 +126,7 @@ int main (int argc, char *argv[]) {
 
   char *infile=NULL;
   char *posfile=NULL; 
-
-  char *outfile;
-  char *foufile=NULL;
-
-  char *genoquality=NULL;
+  char *outfile=NULL;
 
   int argPos = 1, nind = 0, nsites = 0, increment=0, verbose=0, len=0;
 

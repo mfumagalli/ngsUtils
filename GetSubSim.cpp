@@ -78,11 +78,9 @@ FILE *getFILE(const char*fname,const char* mode) {
 int main (int argc, char *argv[]) {
 
   char *infile=NULL;
+  char *outfile=NULL;
 
-  char *outfile;
-  char *foufile=NULL;
-
-  int argPos = 1, nind = 0, increment=0, debug=0, nind_new = 0, check=0, ncat=10;
+  int argPos = 1, nind = 0, increment = 0, nind_new = 0, check=0, ncat=10;
   long int nsites = 0, nsites_new = 0;
 
   // CHECK HERE FOR USAGE
@@ -132,7 +130,7 @@ int main (int argc, char *argv[]) {
     double *tmp = new double[ncat];
     fread(tmp,sizeof(double),ncat,fin);
     
-    if (conta_site<=nsites_new & conta_ind<=nind_new) {
+    if (conta_site<=nsites_new && conta_ind<=nind_new) {
       fwrite(tmp, sizeof(double), ncat, fout);
       ntot++;
     }

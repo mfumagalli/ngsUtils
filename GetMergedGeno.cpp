@@ -107,10 +107,9 @@ int main (int argc, char *argv[]) {
   char *infile1=NULL;
   char *infile2=NULL;
 
-  char *outfile;
-  char *foufile=NULL;
+  char *outfile=NULL;
 
-  int argPos = 1, nind = 0, nind1=0, nind2=0, nsites = 0, increment=0, verbose=0, len=0;
+  int argPos = 1, nind = 0, nind1=0, nind2=0, nsites = 0, increment=0, verbose=0;
 
   // CHECK HERE FOR USAGE:
 
