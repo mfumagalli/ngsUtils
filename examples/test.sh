@@ -22,9 +22,9 @@ rm -f testA.*
 echo -e 1>&2
 
 # Test MD5 checksum
-md5sum testA* | sort -k 2,2 > /tmp/test.md5
-
-if diff /tmp/test.md5 test.md5 > /dev/null
+TMP=`mktemp`
+md5sum testA* | sort -k 2,2 > $TMP
+if diff $TMP test.md5 > /dev/null
 then
     echo "ngsUtils: All tests OK!"
 else
