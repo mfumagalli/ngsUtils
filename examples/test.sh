@@ -22,7 +22,7 @@ rm -f testA.*
 echo -e 1>&2
 
 # Test MD5 checksum
-TMP=`mktemp`
+TMP=`mktemp --suffix .ngsUtils`
 md5sum testA* | sort -k 2,2 > $TMP
 if diff $TMP test.md5 > /dev/null
 then
