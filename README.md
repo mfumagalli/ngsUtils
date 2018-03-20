@@ -5,14 +5,18 @@ In most cases you won't need to use them but, in case you do, there are several 
 
 ### Installation
 
-To download use:
+To install the entire package just download the source code:
 
     % git clone https://github.com/mfumagalli/ngsUtils.git
 
-To install these tools just run:
+and run:
 
     % cd ngsUtils
     % make
+
+To run the tests (only if installed through [ngsTools](https://github.com/mfumagalli/ngsTools)):
+
+    % make test
 
 Executables are built into the main directory. If you wish to clean all binaries and intermediate files:
 
